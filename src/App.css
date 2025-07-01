@@ -5,6 +5,7 @@ body {
   background: linear-gradient(180deg, #080a0f 0%, #0d0f18 100%);
   color: white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -93,8 +94,8 @@ h1{
   /* background-size: 40px 40px; */
   /* background-color: #0f172a; dark base */
   width:100%;
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 100px auto;
+  /* margin-top: 3rem; */
   height: 500px;
   border-radius:30px;
   justify-content:center;
@@ -117,4 +118,104 @@ h1{
 p{
   color: 	#a1a1aa;
   text-shadow: 0 0 20px rgba(30, 58, 138, 3.0);
+}
+
+/* main section */
+.container {
+  /* display:flex; */
+  flex-direction:column;
+  width: 100px;
+  height: 100rem;
+  /* background: #38bdf8; */
+  background: linear-gradient(180deg, #080a0f 0%, #0d0f18 100%);
+  color: white;
+  margin: 100px auto;
+  animation: rotateAndExpand 2s ease forwards;
+  transform-origin: center;
+  box-shadow: 0 0 20px rgba(30, 58, 138, 3.0);
+}
+
+@keyframes rotateAndExpand {
+  0% {
+    transform: rotate(0deg);
+    width: 100px;
+  }
+  50% {
+    transform: rotate(90deg);
+    width: 4px;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 90%;
+  }
+}
+.search {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  /* align-items:center; */
+  margin:0 auto;
+  margin-top: 4rem;
+  gap:20px;
+}
+.type{
+  display:flex;
+  width:30%;
+  height:3rem;
+  box-shadow: 0 0 20px rgba(30, 58, 138, 3.0);
+  border-radius: 30px;
+  /* margin: 0 auto; */
+  justify-content:center;
+  margin-top:2rem;
+
+}
+.button{
+  display:flex;
+  width:10%;
+  height:3rem;
+  background-color:green;
+  box-shadow: 0 0 20px rgba(30, 58, 138, 3.0);
+  border-radius: 30px;
+  /* margin: 0 auto; */
+  justify-content:center;
+  margin-top:2rem;
+
+}
+.button button {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.contentcontainer{
+  position: relative;
+  display:flex;
+  height:5rem;
+  width:60%;
+  box-shadow:0 0 20px rgba(30, 58, 138, 3.0);
+  margin-bottom:2rem;
+  justify-content:center;
+  margin:4rem auto;
+}
+
+.contentbutton{
+  position:absolute;
+  display:flex;
+  width:20%;
+  height:2rem;
+  background-color:#6366f1;
+  /* color:white; */
+  box-shadow: 0 0 20px rgba(30, 58, 138, 3.0);
+  border-radius: 30px;
+  /* margin: 0 auto; */
+  justify-content:center;
+  /* margin-top:100%; */
+  bottom:10px;
+}
+.contentbutton button{
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
 }
