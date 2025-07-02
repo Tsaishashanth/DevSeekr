@@ -181,7 +181,8 @@ p{
   justify-content:center;
   align-items:center;
   text-align:center;
-  margin:1rem 0 2rem 0;
+  margin:2.5rem 0 2.5rem 0;
+  width:100%;
   gap:20px;
 
 }
@@ -193,7 +194,7 @@ p{
   border-radius: 30px;
   /* margin: 0 auto; */
   justify-content:center;
-  margin-top:2rem;
+  /* margin-top:2rem; */
 }
 .type input {
   display:flex;
@@ -215,7 +216,7 @@ p{
   border-radius: 30px;
   /* margin: 0 auto; */
   justify-content:center;
-  margin-top:2rem;
+  /* margin-top:2rem; */
 
 }
 .button button {
