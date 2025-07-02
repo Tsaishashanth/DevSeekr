@@ -4,22 +4,43 @@
 
 ![DevSeekr Logo](./public/image.jpg)
 
+---
+
 ## 🚀 Features
 
 - 🔎 Search for coding questions directly
 - 📡 Stack Exchange API integration
 - 💡 Clean and minimal UI
-- 📱 Fully responsive design
 - ⚛️ Built using React JS
+
 
 
 ## 🛠 Tech Stack
 
 - React JS
-- Tailwind CSS
 - Stack Exchange API
+
+ 
 
 ## 📸 Preview
 
 ![image](https://github.com/user-attachments/assets/99efd9c0-e3a9-4a10-b4a7-808d2e9c38b6)
+
+
+---
+
+
+## 📡 Live Demo
+
+- https://devseekr.vercel.app/
+
+
+## 🔮 Future Updates
+
+- ✅ Make the website fully responsive for all screen sizes
+- 🔐 Add user Login and Sign Up functionality
+- 💾 Store user search history and activity data
+- - 📈 Add stats or insights based on user searches
+- 💬 Allow users to comment or bookmark answers
+
 
