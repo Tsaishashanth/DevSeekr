@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import {useEffect} from 'react';
+import {useRef} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
+  const containerRef = useRef(null);
 
   const handleSearch = async () => {
     if (!query.trim()) return;
@@ -21,21 +23,23 @@ function App() {
     }
   };
     useEffect(() => {
-    const container = document.querySelector('.container');
+  const container = containerRef.current;
 
-    const handleScroll = () => {
-      const rect = container.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        container.classList.add('rotate-animate');
-      } else {
-        container.classList.remove('rotate-animate');
-      }
-    };
+  const handleScroll = () => {
+    if (!container) return;
+    const rect = container.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      container.classList.add('rotate-animate');
+    } else {
+      container.classList.remove('rotate-animate');
+    }
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // optional, in case it's already in view
 
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
   return (
     <>
       <div className="navbar">
@@ -63,8 +67,8 @@ function App() {
       <div className="navbar">
         <h1>Search</h1>
       </div>
-      <div className="container">
-        <div class="container-inner">
+      <div className="container" ref={containerRef}>
+        <div className="container-inner">
         <div className="search">
           <div className="type">
             <input
