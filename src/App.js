@@ -3,7 +3,7 @@ import {useEffect} from 'react';
 import {useRef} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+ 
 function App() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
