@@ -282,9 +282,9 @@ p{
 /* lets write media queries from here */
 
 @media(max-width: 798px) {
-  /* body {
+  html, body {
     overflow-x:hidden;
-  } */
+  }
    .firstpage{
     height:auto;
    }
