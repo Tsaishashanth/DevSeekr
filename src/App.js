@@ -101,7 +101,7 @@ function App() {
         </div>
       </div>
       <footer className= "footer">
-        <p>© 2025 DevSeekr. All rights reserved.</p>
+        <p>© 2026 DevSeekr. All rights reserved.</p>
         <hr />
         <p>Built for developers by Tarigopula Sai Shashanth.</p>
       </footer>
