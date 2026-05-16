@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {useEffect} from 'react';
 import {useRef} from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import logo from "./src/assets/images/image/jpg"
+import './styles/App.css';
  
 function App() {
   const [query, setQuery] = useState('');
