@@ -2,7 +2,7 @@
 
 **DevSeekr** is a smart and clean tool built for developers to quickly search and find solutions from Stack Overflow. Whether you're stuck with an error or just exploring, DevSeekr helps you get the right answers faster.
 
-![DevSeekr Logo](./public/image.jpg)
+![DevSeekr Logo](./public/seekdevscreenshot.jpg)
 
 ---
 
